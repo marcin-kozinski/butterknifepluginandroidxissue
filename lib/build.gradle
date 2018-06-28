@@ -1,9 +1,10 @@
 buildscript {
-    ext.butterKnifeVersion = '8.5.1'
+    ext.butterKnifeVersion = '9.0.0-SNAPSHOT'
 
     repositories {
         google()
         jcenter()
+        maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
     }
     dependencies {
         classpath "com.jakewharton:butterknife-gradle-plugin:$butterKnifeVersion"
